@@ -1,14 +1,23 @@
 .header {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  border: 1px solid black;
+
+  padding: 16px 64px;
+  align-items: center;
 
   .logoWrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 4px;
+
+    h2 {
+      font-family: Noto Sans;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -6%;
+    }
   }
 
   .navigation {
