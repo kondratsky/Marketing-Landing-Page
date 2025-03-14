@@ -1,7 +1,7 @@
 import s from "./Wrapper.module.scss";
 
-function Wrapper() {
-  return <div className={s.wrapper}> </div>;
+function Wrapper({ children }) {
+  return <div className={s.wrapper}> {children}</div>;
 }
 
 export default Wrapper;
