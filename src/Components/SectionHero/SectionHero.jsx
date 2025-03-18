@@ -1,9 +1,11 @@
 import Button from "../Button/Button";
+import { withContainer } from "../Container/Container";
+
 import s from "./SectionHero.module.scss";
 
-function SectionHero() {
+function SectionHero({ className }) {
   return (
-    <div className={s.sectionHero}>
+    <div className={`${s.sectionHero} ${className || ""}`}>
       <div className={s.heroMessage}>
         <div className={s.wrapperBlock}>
           <p>Well crafted abstract images</p>
@@ -13,8 +15,8 @@ function SectionHero() {
           </p>
         </div>
         <div className={s.ctaButtons}>
-          <Button label={"Learn more"} type="secondary" size="big" />
-          <Button label={"See pricing"} type="primary" size="big" />
+          <Button label="Learn more" type="secondary" size="big" />
+          <Button label="See pricing" type="primary" size="big" />
         </div>
       </div>
       <div>
@@ -23,4 +25,5 @@ function SectionHero() {
     </div>
   );
 }
-export default SectionHero;
+
+export default withContainer(SectionHero);

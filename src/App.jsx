@@ -1,6 +1,5 @@
 import Header from "./Components/Header/Header";
 import SectionHero from "./Components/SectionHero/SectionHero";
-import Container from "./Components/Container/Container";
 import s from "./App.module.scss";
 
 function App() {
@@ -8,9 +7,7 @@ function App() {
     <div className={s.body}>
       <Header />
       <div className={s.wrapper}>
-        <Container>
-          <SectionHero />
-        </Container>
+        <SectionHero />
       </div>
     </div>
   );
