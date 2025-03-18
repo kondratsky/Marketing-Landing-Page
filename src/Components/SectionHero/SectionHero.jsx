@@ -5,7 +5,7 @@ function SectionHero() {
   return (
     <div className={s.sectionHero}>
       <div className={s.heroMessage}>
-        <div className="wrapperBlock">
+        <div className={s.wrapperBlock}>
           <p>Well crafted abstract images</p>
           <p>
             High quality abstract images for your projects, wallpaper and

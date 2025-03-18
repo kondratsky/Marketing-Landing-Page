@@ -1,25 +1,22 @@
 .sectionHero {
   width: 100%;
   gap: 32px;
-  padding: 80px 0;
-  height: 718px;
   border-radius: 8px;
   display: flex;
-  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
 
   @media (max-width: 1440px) {
     & {
       width: 100%;
-      max-width: 1408px;
       height: auto;
     }
   }
 
   .heroMessage {
-    border: 1px solid black;
-    height: 324px;
     gap: 24px;
     width: 50%;
+    height: fit-content;
 
     p:first-of-type {
       font-family: Noto Sans;
@@ -42,14 +39,11 @@
       color: rgba(82, 82, 82, 1);
     }
     .wrapperBlock {
-      width: 488px;
-      height: 200px;
       gap: 24px;
     }
     .ctaButtons {
       display: flex;
-      justify-content: space-between;
-      width: 383px;
+      gap: 32px;
     }
   }
 
@@ -60,7 +54,6 @@
     @media (min-width: 1024px) {
       flex-direction: column-reverse;
       text-align: center;
-      width: 696px;
     }
   }
 }

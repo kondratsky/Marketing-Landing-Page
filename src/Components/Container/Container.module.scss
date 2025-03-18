@@ -1,14 +1,12 @@
 .container {
-  width: 100%; /* Контейнер буде займати всю ширину доступного простору */
-  max-width: 1408px; /* Максимальна ширина контейнера */
-  margin: 0 auto; /* Центрує контейнер по горизонталі */
-  padding: 0 16px; /* Відступи зліва та справа */
-  box-sizing: border-box; /* Враховує padding в ширині */
-  border: 1px solid yellowgreen;
+  width: 100%;
+  margin: 0 auto;
+  padding: 96px;
+  box-sizing: border-box;
 
   @media (max-width: 736px) {
     .container {
-      padding: 0 12px; /* Зменшення відступів для мобільних пристроїв */
+      padding: 0 12px;
     }
   }
 }

@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   max-width: 1440px;
-  padding: 16px 64px;
+  padding: 16px 96px;
   align-items: center;
   gap: 32px;
   width: 100%;
@@ -10,6 +10,7 @@
 
   .navWrapper {
     display: flex;
+    align-items: center;
     gap: 32px;
   }
 
