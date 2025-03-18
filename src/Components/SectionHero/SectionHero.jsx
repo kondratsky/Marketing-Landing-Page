@@ -3,30 +3,22 @@ import s from "./SectionHero.module.scss";
 
 function SectionHero() {
   return (
-    <div className={s.SectionHero}>
-      <div className={s.HeroMessage}>
-        <p>
-          Well crafted
-          <br /> abstract images
-        </p>
-        <p>
-          High quality abstract images for your projects,
-          <br /> wallpaper and presentations.
-        </p>
-        <div>
-          <Button
-            label={"Learn more"}
-            type="secondary"
-            width={"175,5px"}
-            height={"60px"}
-          />
-          <Button
-            label={"See pricing"}
-            type="primary"
-            width={"175,5px"}
-            height={"60px"}
-          />
+    <div className={s.sectionHero}>
+      <div className={s.heroMessage}>
+        <div className="wrapperBlock">
+          <p>Well crafted abstract images</p>
+          <p>
+            High quality abstract images for your projects, wallpaper and
+            presentations.
+          </p>
         </div>
+        <div className={s.ctaButtons}>
+          <Button label={"Learn more"} type="secondary" size="big" />
+          <Button label={"See pricing"} type="primary" size="big" />
+        </div>
+      </div>
+      <div>
+        <img src="/HeroImage.svg" alt="Logotype" className="heroImage" />
       </div>
     </div>
   );
