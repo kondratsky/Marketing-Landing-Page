@@ -1,0 +1,51 @@
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  .titleStyle {
+    font-family: Noto Sans;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: rgba(67, 56, 202, 1);
+  }
+  .descriptionStyle {
+    font-family: Noto Sans;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: rgba(23, 23, 23, 1);
+  }
+
+  .highlightStyle {
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: rgba(82, 82, 82, 1);
+  }
+
+  .smallDescriptionStyle {
+    font-family: Noto Sans;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .imageStyle {
+    height: auto;
+    margin-bottom: 10px;
+  }
+}
