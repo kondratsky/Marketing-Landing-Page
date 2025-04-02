@@ -1,8 +1,11 @@
 import Logo from "../../assets/Logomark.svg";
 import Button from "../Button/Button";
 import s from "./Header.module.scss";
+import { useState } from "react";
 
 function Header() {
+  const [menuOpen, setMenuOpen] = useState("false");
+
   const arrNavigation = [
     { label: "Home", href: "#home" },
     { label: "Features", href: "#features" },

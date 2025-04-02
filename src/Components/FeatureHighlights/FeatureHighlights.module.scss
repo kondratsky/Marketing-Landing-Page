@@ -1,0 +1,25 @@
+.sectionHighlights {
+  .headerHighlights {
+    border: 1px dotted black;
+  }
+
+  .flexHighlightsContainer {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    border: 1px dotted black;
+  }
+
+  @media (max-width: 900px) {
+    .flexHighlightsContainer {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .flexHighlightsContainer {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

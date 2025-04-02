@@ -3,16 +3,22 @@ import SectionHero from "./Components/SectionHero/SectionHero";
 import s from "./App.module.scss";
 import Marquee from "react-fast-marquee";
 import SectionSocialProof from "./Components/SectionSocialProof/SectionSocialProof";
-import SectionFeaturesFirst from "./Components/SectionFeaturesFirst/SectionFeaturesFirst";
+import FeatureHighlights from "./Components/FeatureHighlights/FeatureHighlights";
+import Container from "./Components/Container/Container";
 
 function App() {
   return (
     <div className={s.body}>
       <Header />
+
       <div className={s.wrapper}>
-        <SectionHero />
+        <Container>
+          <SectionHero />
+        </Container>
         <SectionSocialProof />
-        <SectionFeaturesFirst />
+        <Container>
+          <FeatureHighlights />
+        </Container>
       </div>
     </div>
   );
