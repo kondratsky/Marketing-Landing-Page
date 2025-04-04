@@ -5,6 +5,7 @@ import Marquee from "react-fast-marquee";
 import SectionSocialProof from "./Components/SectionSocialProof/SectionSocialProof";
 import FeatureHighlights from "./Components/FeatureHighlights/FeatureHighlights";
 import Container from "./Components/Container/Container";
+import DesignShowcase from "./Components/DesignShowcase/DesignShowcase";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <SectionSocialProof />
         <Container>
           <FeatureHighlights />
+          <DesignShowcase />
         </Container>
       </div>
     </div>

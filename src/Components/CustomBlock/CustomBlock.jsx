@@ -13,3 +13,4 @@ function CustomBlock({ title, description, highlight, smallText, imgSrc }) {
   );
 }
 export default CustomBlock;
+s

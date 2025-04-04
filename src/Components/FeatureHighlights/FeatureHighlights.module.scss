@@ -1,6 +1,5 @@
 .sectionHighlights {
   .headerHighlights {
-    border: 1px dotted black;
   }
 
   .flexHighlightsContainer {
@@ -8,7 +7,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
-    border: 1px dotted black;
   }
 
   @media (max-width: 900px) {
