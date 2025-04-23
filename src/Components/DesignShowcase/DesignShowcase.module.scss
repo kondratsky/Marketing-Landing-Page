@@ -1,3 +1,18 @@
 .DesignShowcase {
   border: 1px solid black;
+
+  .LeftPanel {
+  }
+  .logoWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .Container {
+    border: 1px solid black;
+    display: flex;
+  }
 }

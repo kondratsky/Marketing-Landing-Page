@@ -2,9 +2,10 @@ import Logo from "../../assets/Logomark.svg";
 import Button from "../Button/Button";
 import s from "./Header.module.scss";
 import { useState } from "react";
+import BurgerMenu from "../../assets/Icons/BurgerMenu.svg";
 
 function Header() {
-  const [menuOpen, setMenuOpen] = useState("false");
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const arrNavigation = [
     { label: "Home", href: "#home" },
@@ -20,11 +21,21 @@ function Header() {
           <img src={Logo} alt="" />
           <h2>Abstractly</h2>
         </div>
-        <nav className={s.navigation}>
+
+        <nav className={`${s.navigation} ${menuOpen ? s.open : ""}`}>
           {arrNavigation.map((el) => (
-            <a href={el.href}>{el.label}</a>
+            <a key={el.href} href={el.href} onClick={() => setMenuOpen(false)}>
+              {el.label}
+            </a>
           ))}
         </nav>
+        <button
+          className={s.burger}
+          onClick={() => setMenuOpen((prev) => !prev)}
+          aria-label="Toggle menu"
+        >
+          <img src={BurgerMenu} alt="Menu" />
+        </button>
       </div>
       <div className={s.buttons}>
         <Button label="Learn more" type="secondary" />

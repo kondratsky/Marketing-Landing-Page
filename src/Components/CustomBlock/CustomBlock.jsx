@@ -1,4 +1,5 @@
 import s from "./CustomBlock.module.scss";
+import cn from "classnames";
 
 function CustomBlock({ title, description, highlight, smallText, imgSrc }) {
   return (
@@ -13,4 +14,3 @@ function CustomBlock({ title, description, highlight, smallText, imgSrc }) {
   );
 }
 export default CustomBlock;
-s

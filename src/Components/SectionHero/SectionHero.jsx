@@ -8,8 +8,8 @@ function SectionHero({ className }) {
     <div className={`${s.sectionHero} ${className || ""}`}>
       <div className={s.heroMessage}>
         <div className={s.wrapperBlock}>
-          <p>Well crafted abstract images</p>
-          <p>
+          <p className={s.title}>Well crafted abstract images</p>
+          <p className={s.description}>
             High quality abstract images for your projects, wallpaper and
             presentations.
           </p>
