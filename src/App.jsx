@@ -6,6 +6,8 @@ import SectionSocialProof from "./Components/SectionSocialProof/SectionSocialPro
 import FeatureHighlights from "./Components/FeatureHighlights/FeatureHighlights";
 import Container from "./Components/Container/Container";
 import DesignShowcase from "./Components/DesignShowcase/DesignShowcase";
+import Convenience from "./Components/Convenience/Convenience";
+import Price from "./Components/Price/Price";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
         <Container>
           <FeatureHighlights />
           <DesignShowcase />
+          <Convenience />
+          <Price />
         </Container>
       </div>
     </div>

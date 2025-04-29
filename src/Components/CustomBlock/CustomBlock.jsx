@@ -1,15 +1,24 @@
 import s from "./CustomBlock.module.scss";
-import cn from "classnames";
 
-function CustomBlock({ title, description, highlight, smallText, imgSrc }) {
+function CustomBlock({
+  title,
+  description,
+  highlight,
+  smallText,
+  imgSrc,
+  direction = "column",
+}) {
   return (
-    <div className={s.headerContainer}>
+    <div className={`${s.headerContainer} ${s[direction]}`}>
       {imgSrc && <img src={imgSrc} alt={title} className={s.imageStyle} />}
-      <h2 className={s.titleStyle}>{title}</h2>
-      <p className={smallText ? s.smallDescriptionStyle : s.descriptionStyle}>
-        {description}
-      </p>
-      <span className={s.highlightStyle}>{highlight}</span>
+
+      <div className={s.textWrapper}>
+        <h2 className={s.titleStyle}>{title}</h2>
+        <p className={smallText ? s.smallDescriptionStyle : s.descriptionStyle}>
+          {description}
+        </p>
+        <p className={s.highlightStyle}>{highlight}</p>
+      </div>
     </div>
   );
 }

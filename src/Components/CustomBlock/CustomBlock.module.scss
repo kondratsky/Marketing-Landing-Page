@@ -1,8 +1,6 @@
 .headerContainer {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  text-align: center;
 
   .titleStyle {
     font-family: Noto Sans;
@@ -23,6 +21,8 @@
     text-align: center;
     vertical-align: middle;
     color: rgba(23, 23, 23, 1);
+    margin: 10px;
+    padding-bottom: 10px;
   }
 
   .highlightStyle {
@@ -34,6 +34,7 @@
     text-align: center;
     vertical-align: middle;
     color: rgba(82, 82, 82, 1);
+    margin: 10px;
   }
 
   .smallDescriptionStyle {
@@ -43,8 +44,25 @@
     line-height: 28px;
     letter-spacing: 0%;
     text-align: center;
+    margin: 10px;
   }
   .imageStyle {
     height: auto;
   }
+}
+
+.column {
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.row {
+  flex-direction: row;
+  align-items: center;
+}
+.textContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

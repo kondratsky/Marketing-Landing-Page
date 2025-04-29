@@ -1,4 +1,4 @@
-.DesignShowcase {
+.Convenience {
   margin: 96px 0px;
   border: 1px solid black;
 
@@ -17,8 +17,9 @@
     display: flex;
     gap: 32px;
     margin-top: 64px;
+    flex-direction: row-reverse;
     @media (max-width: 768px) {
-      flex-direction: column;
+      flex-direction: column-reverse;
     }
   }
 
@@ -26,14 +27,14 @@
     display: flex;
   }
 
-  .Hd,
-  .Drop,
-  .Rainbow {
+  .Rocket,
+  .p2p,
+  .Refund {
     display: flex;
     margin-bottom: 40px;
   }
 
-  .Rainbow {
+  .Refund {
     margin-bottom: 0;
   }
 
@@ -42,12 +43,24 @@
   }
 
   .RightPanel {
-    width: 100%;
+    width: 630px;
+    height: 460px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 12px;
 
-    .DesingImg {
+    .ConvienceImg {
       height: 100%;
       width: 100%;
       object-fit: cover;
+
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 4 / 3;
     }
   }
 }
