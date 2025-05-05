@@ -1,4 +1,11 @@
 .card {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  
+ 
+  
+
   .descriptionStyle {
     font-family: Noto Sans;
     font-weight: 600;
@@ -6,6 +13,9 @@
     line-height: 48px;
     letter-spacing: 0%;
     color: rgba(23, 23, 23, 1);
+    margin: 10px;
+    padding-bottom: 10px;
+    
   }
 
   .smallDescriptionStyle {
@@ -16,15 +26,18 @@
     letter-spacing: 0%;
     vertical-align: middle;
     color: rgba(23, 23, 23, 1);
+    margin: 10px;
+    
   }
 
-  .highlight {
+  .highlightStyle  {
     font-family: Noto Sans;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0%;
     color: rgba(82, 82, 82, 1);
+    margin: 10px;
   }
 
   .mostPopular {
@@ -37,5 +50,26 @@
     text-align: center;
     vertical-align: middle;
     background-color: rgba(238, 242, 255, 1);
+  }
+  .column {
+    flex-direction: column;
+    text-align: center;
+    align-items: start;
+    justify-content: center;
+  }
+
+  .row {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .textContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .descriptionStyle, .smallDescriptionStyle, .highlightStyle {
+    text-align: start;
   }
 }

@@ -1,17 +1,17 @@
 import s from "../../Components/Card/Card.module.scss";
 
-function Card({ popular, description, highlight, smallText }) {
+function Card({ popular, description, highlight, smallText, direction ="column" }) {
   return (
-    <div className={s.card}>
+    <div className={`${s.card} ${direction === "row" ? s.row : s.column}`}>
       <div className={popular ? s.MostPopular : undefined}>
-        <span>{popular}</span>
+        <p>{popular}</p>
       </div>
-      <span
+      <p
         className={smallText ? s.smallDescriptionStyle : s.descriptionStyle}
       >
         {description}
-      </span>
-      <span className={s.highlight}>{highlight}</span>
+      </p>
+      <p className={s.highlightStyle}>{highlight}</p>
     </div>
   );
 }

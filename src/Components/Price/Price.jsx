@@ -15,11 +15,15 @@ function Price() {
         />
       </div>
       <div className={s.container}>
+        <div className={s.card}>
+          <div className={s.headerCard}>
         <Card
           description="Basic Plan"
           highlight="Access to a curated selection of abstract images"
           smallText={true}
         />
+        </div>
+        </div>
       </div>
     </div>
   );
