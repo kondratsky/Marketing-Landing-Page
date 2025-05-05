@@ -1,8 +1,8 @@
-.Convenience {
+.convenience {
   margin: 96px 0px;
   border: 1px solid black;
 
-  .LeftPanel {
+  .leftPanel {
     display: flex;
     flex-direction: column;
   }
@@ -13,7 +13,7 @@
     gap: 4px;
   }
 
-  .Container {
+  .container {
     display: flex;
     gap: 32px;
     margin-top: 64px;
@@ -27,14 +27,14 @@
     display: flex;
   }
 
-  .Rocket,
+  .rocket,
   .p2p,
-  .Refund {
+  .refund {
     display: flex;
     margin-bottom: 40px;
   }
 
-  .Refund {
+  .refund {
     margin-bottom: 0;
   }
 
@@ -42,14 +42,14 @@
     text-align: start;
   }
 
-  .RightPanel {
+  .rightPanel {
     width: 630px;
     height: 460px;
     flex-shrink: 0;
     overflow: hidden;
     border-radius: 12px;
 
-    .ConvienceImg {
+    .convienceImg {
       height: 100%;
       width: 100%;
       object-fit: cover;

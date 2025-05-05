@@ -1,25 +1,25 @@
-.Price {
+.price {
   border: 1px solid black;
 
-  .Container {
+  .container {
     display: flex;
     gap: 32px;
   }
 
-  .CardPrice {
+  .cardPrice {
     align-items: baseline;
     gap: 4px;
 
     margin: 0px 10px;
 
-    .PriceValue {
+    .priceValue {
       font-size: 48px;
       font-weight: 600;
       line-height: 48px;
       font-family: Noto Sans;
     }
 
-    .PricePeriod {
+    .pricePeriod {
       font-size: 16px;
       color: black;
       font-weight: 400;
@@ -28,7 +28,7 @@
     }
   }
 
-  .Card {
+  .card {
     display: flex;
     border: 1px solid #e5e5e5;
     flex-direction: column;
@@ -42,13 +42,13 @@
   }
 
   @media (max-width: 768px) {
-    .Card {
+    .card {
       width: 100%;
       min-height: auto;
       padding: 16px;
     }
   }
-  .Card p {
+  .card p {
     text-align: start;
   }
 
@@ -64,7 +64,7 @@
     margin-bottom: 0px;
   }
 
-  .Include {
+  .include {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -81,12 +81,25 @@
     width: 100%;
   }
 
-  .HeaderCard {
-    background-color: rgba(238, 242, 255, 1);
-    position: cover;
-    padding: 0px;
+  .standartCard {
+    display: flex;
+    border: 1px solid #e5e5e5;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 384px;
+
+    padding: 0px 32px 32px 32px;
+    border-radius: 8px;
+    height: auto;
+    min-height: 676px;
   }
-  .HeaderCard p {
+  .headerCard {
+    background-color: rgba(238, 242, 255, 1);
+    background-size: cover;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  .headerCard p {
     font-family: Noto Sans;
     font-weight: 700;
     font-size: 20px;
@@ -96,5 +109,10 @@
     vertical-align: middle;
     color: rgba(67, 56, 202, 1);
     margin: 0;
+    padding: 0;
   }
+}
+
+.standartCard p {
+  text-align: start;
 }

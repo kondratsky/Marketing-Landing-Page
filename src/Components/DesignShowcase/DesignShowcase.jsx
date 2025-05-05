@@ -6,18 +6,18 @@ import Rainbow from "../../assets/Icons/rainbow-line.svg";
 
 function DesignShowcase() {
   return (
-    <div className={s.DesignShowcase}>
-      <div className={s.Header}>
+    <div className={s.designShowcase}>
+      <div className={s.header}>
         <CustomBlock
           title="High quality images"
           description="For designers, by designers"
           highlight="Unleash boundless creativity with a large repository of images optimized for designers"
         />
       </div>
-      <div className={s.Container}>
-        <div className={s.LeftPanel}>
+      <div className={s.container}>
+        <div className={s.leftPanel}>
           <div className={s.flex}>
-            <div className={s.Hd}>
+            <div className={s.hd}>
               <div>
                 <CustomBlock imgSrc={HD} direction="row" />
               </div>
@@ -29,7 +29,7 @@ function DesignShowcase() {
                 />
               </div>
             </div>
-            <div className={s.Drop}>
+            <div className={s.drop}>
               <div>
                 <CustomBlock imgSrc={Drop} direction="row" />
               </div>
@@ -42,7 +42,7 @@ function DesignShowcase() {
               </div>
             </div>
 
-            <div className={s.Rainbow}>
+            <div className={s.rainbow}>
               <div>
                 <CustomBlock imgSrc={Rainbow} direction="row" />
               </div>
@@ -56,11 +56,11 @@ function DesignShowcase() {
             </div>
           </div>
         </div>
-        <div className={s.RightPanel}>
+        <div className={s.rightPanel}>
           <img
             src="/DesingShowCaseImg.svg"
             alt="Logotype"
-            className={s.DesingImg}
+            className={s.desingImg}
           />
         </div>
       </div>

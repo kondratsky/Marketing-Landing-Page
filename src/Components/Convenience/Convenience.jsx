@@ -6,18 +6,18 @@ import Refund from "../../assets/Icons/refund-2-fill.svg";
 
 function Convenience() {
   return (
-    <div className={s.Convenience}>
-      <div className={s.Header}>
+    <div className={s.convenience}>
+      <div className={s.header}>
         <CustomBlock
           title="Best-in-class support"
           description="Convenience and licensing that empowers"
           highlight="In a world where storytelling constantly evolves,don't let licensing and poor support hold you down."
         />
       </div>
-      <div className={s.Container}>
-        <div className={s.LeftPanel}>
+      <div className={s.container}>
+        <div className={s.leftPanel}>
           <div className={s.flex}>
-            <div className={s.Rocket}>
+            <div className={s.rocket}>
               <div>
                 <CustomBlock imgSrc={Rocket} direction="row" />
               </div>
@@ -42,7 +42,7 @@ function Convenience() {
               </div>
             </div>
 
-            <div className={s.Refund}>
+            <div className={s.refund}>
               <div>
                 <CustomBlock imgSrc={Refund} direction="row" />
               </div>
@@ -56,11 +56,11 @@ function Convenience() {
             </div>
           </div>
         </div>
-        <div className={s.RightPanel}>
+        <div className={s.rightPanel}>
           <img
             src="public/ConvienceImg.svg"
             alt="Logotype"
-            className={s.ConvienceImg}
+            className={s.convienceImg}
           />
         </div>
       </div>
