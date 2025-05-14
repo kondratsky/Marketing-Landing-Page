@@ -2,23 +2,15 @@
   display: flex;
   flex-direction: column;
   text-align: start;
-  
- 
-  
 
-  .descriptionStyle {
-    font-family: Noto Sans;
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 48px;
-    letter-spacing: 0%;
-    color: rgba(23, 23, 23, 1);
-    margin: 10px;
-    padding-bottom: 10px;
-    
+  margin: 0px 0px 32px 0px;
+
+  p {
+    margin: 0;
+    padding: 0;
   }
 
-  .smallDescriptionStyle {
+  .titleStyle {
     font-family: Noto Sans;
     font-weight: 600;
     font-size: 24px;
@@ -26,18 +18,19 @@
     letter-spacing: 0%;
     vertical-align: middle;
     color: rgba(23, 23, 23, 1);
-    margin: 10px;
-    
+    margin: 0px 0px 8px 0px;
+    padding: 0;
   }
 
-  .highlightStyle  {
+  .highlightStyle {
     font-family: Noto Sans;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0%;
     color: rgba(82, 82, 82, 1);
-    margin: 10px;
+    margin: 0;
+    padding: 0;
   }
 
   .mostPopular {
@@ -62,14 +55,65 @@
     flex-direction: row;
     align-items: center;
   }
-
-  .textContent {
+  .priceGroup {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: flex-start;
+    margin-top: 32px;
   }
 
-  .descriptionStyle, .smallDescriptionStyle, .highlightStyle {
-    text-align: start;
+  .blackRow {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    color: rgba(23, 23, 23, 1);
+  }
+
+  .purpleRow {
+    color: rgba(67, 56, 202, 1);
+  }
+  .price {
+    font-family: Noto Sans;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: 0%;
+  }
+
+  .per {
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+  }
+
+  .billing {
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: rgba(82, 82, 82, 1);
+  }
+
+  .include {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 32px;
+
+    height: 300px;
+  }
+
+  .includeItem {
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: rgba(82, 82, 82, 1);
+    display: flex;
+    gap: 12px;
   }
 }
