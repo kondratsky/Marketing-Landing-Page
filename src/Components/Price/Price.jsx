@@ -55,7 +55,7 @@ function Price() {
         <div className={s.card}>
           <Card
             purple={true}
-            popular={true}
+            popular="Most Popular"
             title="Standard Plan"
             highlight="Next-level Integrations, priced economically"
             price={isYearly ? "$199.99" : "$19.99"}

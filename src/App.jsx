@@ -8,6 +8,7 @@ import Container from "./Components/Container/Container";
 import DesignShowcase from "./Components/DesignShowcase/DesignShowcase";
 import Convenience from "./Components/Convenience/Convenience";
 import Price from "./Components/Price/Price";
+import Question from "./Components/Question/Question";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <DesignShowcase />
           <Convenience />
           <Price />
+          <Question/>
         </Container>
       </div>
     </div>
