@@ -9,12 +9,14 @@ function Button({
   size = "small",
   isDisabled = false,
   className,
+  style,
 }) {
   return (
     <button
       disabled={isDisabled}
       onClick={onClick}
       className={classNames(s.btn, s[type], s[size], className)}
+      style={style}
     >
       {label}
     </button>

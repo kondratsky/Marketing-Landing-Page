@@ -20,7 +20,8 @@
     max-width: 384px;
     box-sizing: border-box;
     min-height: 42.25rem;
-    padding: 32px;
+    display: flex;
+    flex-direction: column;
   }
   Button {
     width: 100%;

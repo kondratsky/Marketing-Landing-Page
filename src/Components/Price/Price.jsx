@@ -49,7 +49,17 @@ function Price() {
               "Email support",
             ]}
           />
-          <Button type="secondary" label="Buy now" />
+          <div
+            style={{
+              width: "100%",
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
+              marginBottom: "1rem",
+            }}
+          >
+            <Button type="secondary" label="Buy now" style={{ width: "80%" }} />
+          </div>
         </div>
 
         <div className={s.card}>
@@ -69,7 +79,17 @@ function Price() {
               "Advanced analytics",
             ]}
           />
-          <Button type="primary" label="Buy now" />
+          <div
+            style={{
+              width: "100%",
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
+              marginBottom: "1rem",
+            }}
+          >
+            <Button type="primary" label="Buy now" style={{ width: "80%" }} />
+          </div>
         </div>
 
         <div className={s.card}>
@@ -89,7 +109,17 @@ function Price() {
               "Advanced analytics and insights",
             ]}
           />
-          <Button type="secondary" label="Buy now" />
+          <div
+            style={{
+              width: "100%",
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
+              marginBottom: "1rem",
+            }}
+          >
+            <Button type="secondary" label="Buy now" style={{ width: "80%" }} />
+          </div>
         </div>
       </div>
     </div>
