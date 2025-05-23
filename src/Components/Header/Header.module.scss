@@ -1,49 +1,15 @@
 .header {
   display: flex;
   justify-content: space-between;
-  max-width: 1440px;
-  padding: 16px 96px;
   align-items: center;
-  gap: 32px;
+  max-width: 1440px;
   width: 100%;
+  padding: 16px 96px;
   box-sizing: border-box;
-  @media (max-width: 768px) {
-    justify-content: space-between;
-  }
+  border: 1px solid black;
 
-  @media (max-width: 1440px) {
-    & {
-      width: 100%;
-      height: auto;
-    }
-  }
-  // @media (max-width: 768px) {
-  //   position: fixed;
-  //   top: 0;
-  //   right: 0;
-  //   display: flex;
-  //   flex-direction: column;
-  //   width: 220px;
-  //   height: 100%;
-  //   background-color: #ffff;
-  //   border: 2px solid black;
-  //   border-top-right-radius: 16px;
-  //   border-bottom-right-radius: 16px;
-  //   box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.25);
-  //   transition: transform 0.3s linear;
-  // }
-  // &.open {
-  //   display: flex;
-  // }
-}
-.burger {
-  display: none;
-  font-size: 24px;
-
-  border: none;
-  cursor: pointer;
   @media (max-width: 768px) {
-    display: block;
+    padding: 16px 24px;
   }
 }
 
@@ -51,11 +17,11 @@
   display: flex;
   align-items: center;
   gap: 32px;
+  flex-grow: 1;
 }
 
 .logoWrapper {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 4px;
 
@@ -64,19 +30,28 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: -6%;
+    letter-spacing: -0.06em;
   }
 }
 
 .navigation {
   display: flex;
   gap: 32px;
+
   @media (max-width: 768px) {
     display: none;
   }
 
   &.open {
     display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 84px;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 16px 24px;
+    z-index: 1000;
   }
 
   a {
@@ -84,15 +59,28 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: 0%;
     text-decoration: none;
     color: rgba(82, 82, 82, 1);
   }
 }
+
 .buttons {
   display: flex;
   gap: 16px;
+  margin-left: 18.93em;
+
   @media (max-width: 768px) {
     display: none;
+  }
+}
+
+.burger {
+  display: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    display: block;
   }
 }

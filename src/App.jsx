@@ -9,6 +9,7 @@ import DesignShowcase from "./Components/DesignShowcase/DesignShowcase";
 import Convenience from "./Components/Convenience/Convenience";
 import Price from "./Components/Price/Price";
 import Question from "./Components/Question/Question";
+import Subscribe from "./Components/Subscribe/Subscribe";
 
 function App() {
   return (
@@ -25,7 +26,8 @@ function App() {
           <DesignShowcase />
           <Convenience />
           <Price />
-          <Question/>
+          <Question />
+          <Subscribe />
         </Container>
       </div>
     </div>

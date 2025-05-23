@@ -1,8 +1,8 @@
 import Logo from "../../assets/Logomark.svg";
-import Button from "../Button/Button";
-import s from "./Header.module.scss";
-import { useState } from "react";
 import BurgerMenu from "../../assets/Icons/BurgerMenu.svg";
+import Button from "../Button/Button";
+import { useState } from "react";
+import s from "./Header.module.scss";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,11 +14,12 @@ function Header() {
     { label: "About us", href: "#about" },
     { label: "Contact", href: "#contact" },
   ];
+
   return (
     <header className={s.header}>
       <div className={s.navWrapper}>
         <div className={s.logoWrapper}>
-          <img src={Logo} alt="" />
+          <img src={Logo} alt="Logo" />
           <h2>Abstractly</h2>
         </div>
 
@@ -29,18 +30,20 @@ function Header() {
             </a>
           ))}
         </nav>
-        <button
-          className={s.burger}
-          onClick={() => setMenuOpen((prev) => !prev)}
-          aria-label="Toggle menu"
-        >
-          <img src={BurgerMenu} alt="Menu" />
-        </button>
+
+        <div className={s.buttons}>
+          <Button label="Learn more" type="secondary" />
+          <Button label="See pricing" />
+        </div>
       </div>
-      <div className={s.buttons}>
-        <Button label="Learn more" type="secondary" />
-        <Button label="See pricing" />
-      </div>
+
+      <button
+        className={s.burger}
+        onClick={() => setMenuOpen((prev) => !prev)}
+        aria-label="Toggle menu"
+      >
+        <img src={BurgerMenu} alt="Menu" />
+      </button>
     </header>
   );
 }

@@ -10,18 +10,25 @@
     justify-content: space-between;
     align-items: center;
     margin: 64px 0px 96px 0px;
-
     gap: 32px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
   }
 
   .card {
     border-radius: 8px;
     border: 1px solid rgba(229, 229, 229, 1);
-    max-width: 384px;
+    width: 33%;
     box-sizing: border-box;
     min-height: 42.25rem;
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 768px) {
+      width: 95%;
+    }
   }
   Button {
     width: 100%;

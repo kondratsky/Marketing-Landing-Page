@@ -1,0 +1,65 @@
+.subscribe {
+  border: 1px solid black;
+
+  .container {
+    display: flex;
+    gap: 32px;
+
+    .leftPanel {
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+      padding: 74px 32px;
+
+      .descriptionAndInclude {
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+        p {
+          text-align: start;
+        }
+
+        .include {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+
+          .includeItem {
+            font-family: Noto Sans;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0%;
+            color: rgba(82, 82, 82, 1);
+            display: flex;
+            gap: 12px;
+          }
+        }
+      }
+      .footer {
+        // border: 1px solid black;
+
+        .register {
+          display: flex;
+          flex-direction: row;
+          gap: 16px;
+          //   border: 1px solid black;
+          min-height: 40px;
+        }
+
+        p {
+          font-family: Noto Sans;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 0%;
+          color: rgba(82, 82, 82, 1);
+        }
+      }
+    }
+  }
+  .rightPanel {
+    height: 100%;
+  }
+}

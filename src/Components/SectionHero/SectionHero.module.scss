@@ -21,6 +21,11 @@
     gap: 24px;
     width: 50%;
     height: fit-content;
+    @media (max-width: 768px) {
+      width: 100%;
+      padding: 0 16px;
+      text-align: start;
+    }
 
     .title {
       font-family: Noto Sans;
