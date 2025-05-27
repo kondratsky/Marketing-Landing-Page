@@ -1,0 +1,79 @@
+.price {
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  height: auto;
+
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 64px 0px 96px 0px;
+    gap: 32px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  .card {
+    border-radius: 8px;
+    border: 1px solid rgba(229, 229, 229, 1);
+    width: 33%;
+    box-sizing: border-box;
+    min-height: 42.25rem;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 768px) {
+      width: 95%;
+    }
+  }
+  Button {
+    width: 100%;
+    font-family: Noto Sans;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+  }
+
+  .toggleTabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .toggleTabs > div {
+    display: inline-flex;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .tab {
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #555;
+    transition: background 0.3s, color 0.3s;
+
+    &:not(:last-child) {
+      border-right: 1px solid #ccc;
+    }
+
+    &:hover {
+      background: #f2f2f2;
+    }
+  }
+
+  .active {
+    background: white;
+    color: black;
+    font-weight: 600;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  }
+}

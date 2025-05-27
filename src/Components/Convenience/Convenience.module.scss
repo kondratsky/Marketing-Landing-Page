@@ -1,0 +1,65 @@
+.convenience {
+  margin: 96px 0px;
+ 
+
+  .leftPanel {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logoWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+  }
+
+  .container {
+    display: flex;
+    gap: 32px;
+    margin-top: 64px;
+    flex-direction: row-reverse;
+    @media (max-width: 768px) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .block {
+    display: flex;
+  }
+
+  .rocket,
+  .p2p,
+  .refund {
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  .refund {
+    margin-bottom: 0;
+  }
+
+  .block p {
+    text-align: start;
+  }
+
+  .rightPanel {
+   
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 12px;
+
+    .convienceImg {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 4 / 3;
+    }
+  }
+}

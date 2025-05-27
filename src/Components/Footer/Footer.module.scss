@@ -1,0 +1,64 @@
+.footer{
+    
+margin-top:-96px;
+
+    .container{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 96px auto;
+        max-width: 1280px;
+         gap:32px;
+
+         @media (max-width:370px) {
+            width:100%;
+         }
+
+        .header{
+            display: flex;
+            flex-direction: row;
+            gap:26px;
+          
+
+            a{
+                font-family: Noto Sans;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0%;
+                color:rgba(82, 82, 82, 1);
+                text-decoration: none;
+            }
+        }
+
+            .flex{
+                display: flex;
+                flex-direction: column;
+                gap:16px;
+                justify-content: center;
+                align-items: center;
+                
+
+            .icons{
+                display: flex;
+                flex-direction: row;
+                justify-content:center ;
+                align-items: center;
+                gap:28px;
+         }
+
+        .copyRight{
+            font-family: Noto Sans;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0%;
+            text-align: center;
+            color:rgba(23, 23, 23, 1);
+        }
+
+            }
+       
+    }
+}

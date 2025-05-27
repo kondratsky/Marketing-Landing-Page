@@ -1,0 +1,19 @@
+.input {
+  padding: 10px;
+  border: 1px solid rgba(229, 229, 229, 1);
+  border-radius: 6px;
+  
+  font-size: 16px;
+  transition: border-color 0.2s;
+
+}
+
+.inputError {
+  border-color: #e74c3c;
+}
+
+.errorText {
+  color: #e74c3c;
+  font-size: 14px;
+  margin-top: 4px;
+}

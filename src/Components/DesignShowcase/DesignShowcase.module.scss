@@ -1,0 +1,53 @@
+.designShowcase {
+  margin: 96px 0px;
+  
+
+  .leftPanel {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logoWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+  }
+
+  .container {
+    display: flex;
+    gap: 32px;
+    margin-top: 64px;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  .block {
+    display: flex;
+  }
+
+  .hd,
+  .drop,
+  .rainbow {
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  .rainbow {
+    margin-bottom: 0;
+  }
+
+  .block p {
+    text-align: start;
+  }
+
+  .rightPanel {
+    width: 100%;
+
+    .desingImg {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}

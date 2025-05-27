@@ -1,0 +1,98 @@
+.subscribe {
+
+  
+
+  .container {
+    display: flex;
+    gap: 32px;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    .leftPanel {
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+      padding: 74px 32px;
+
+      .descriptionAndInclude {
+        
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+        p {
+          text-align: start;
+        }
+
+        .include {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+
+          .includeItem {
+            font-family: Noto Sans;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0%;
+            color: rgba(82, 82, 82, 1);
+            display: flex;
+            gap: 12px;
+          }
+        }
+      }
+      .footer {
+        
+
+        .register {
+          display: flex;
+          flex-direction: row;
+          gap: 16px;
+          @media (max-width:370px) {
+            flex-direction: column;
+          }
+           Input{
+            @media (max-width:370px) {
+              width:100%
+            }
+           }
+           Button{
+            @media (max-width:370px) {
+              width:100%
+            }
+           }
+          
+        }
+
+        p {
+          font-family: Noto Sans;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 0%;
+          color: rgba(82, 82, 82, 1);
+        }
+      }
+    }
+  }
+  .rightPanel {
+    height: 100%;
+      flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 12px;
+
+    .subscribeImg {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 4 / 3;
+    }
+  }
+}

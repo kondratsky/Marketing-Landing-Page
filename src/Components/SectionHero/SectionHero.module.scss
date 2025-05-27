@@ -1,0 +1,67 @@
+.sectionHero {
+  width: 100%;
+  gap: 32px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    & {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      align-items: center;
+      
+      padding: 10px;
+    }
+  }
+
+  .heroMessage {
+    gap: 24px;
+    width: 50%;
+    height: fit-content;
+    @media (max-width: 768px) {
+      width: 100%;
+      padding: 0 16px;
+      text-align: start;
+    }
+
+    .title {
+      font-family: Noto Sans;
+      font-weight: 600;
+      font-size: 60px;
+      line-height: 60px;
+      letter-spacing: 0%;
+      margin-top: 0px;
+      color: rgba(23, 23, 23, 1);
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+        0px 8px 8px rgba(0, 0, 0, 0.15);
+      @media (max-width: 768px) {
+        font-size: 48px;
+        line-height: 48px;
+      }
+    }
+
+    .description {
+      font-family: Noto Sans;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 28px;
+      letter-spacing: 0%;
+      color: rgba(82, 82, 82, 1);
+    }
+    .wrapperBlock {
+      gap: 24px;
+    }
+    .ctaButtons {
+      display: flex;
+      gap: 32px;
+    }
+  }
+
+  .heroImage {
+    width: 100%;
+    height: auto;
+  }
+}

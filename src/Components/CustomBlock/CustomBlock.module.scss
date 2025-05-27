@@ -1,0 +1,68 @@
+.headerContainer {
+  display: flex;
+  align-items: center;
+
+  .titleStyle {
+    font-family: Noto Sans;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: rgba(67, 56, 202, 1);
+  }
+  .descriptionStyle {
+    font-family: Noto Sans;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: rgba(23, 23, 23, 1);
+    margin: 10px;
+    padding-bottom: 10px;
+  }
+
+  .highlightStyle {
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: rgba(82, 82, 82, 1);
+    margin: 10px;
+  }
+
+  .smallDescriptionStyle {
+    font-family: Noto Sans;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: 10px;
+  }
+  .imageStyle {
+    height: auto;
+  }
+}
+
+.column {
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.row {
+  flex-direction: row;
+  align-items: center;
+}
+.textContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

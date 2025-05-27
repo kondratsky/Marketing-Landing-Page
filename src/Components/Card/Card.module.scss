@@ -1,0 +1,124 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  flex: 1;
+  padding: 32px 32px 0px 32px;
+  @media (max-width: 768px) {
+    width: 95%;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .titleStyle {
+    font-family: Noto Sans;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: rgba(23, 23, 23, 1);
+    margin: 0px 0px 8px 0px;
+    padding: 0;
+  }
+
+  .highlightStyle {
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: rgba(82, 82, 82, 1);
+    margin: 0;
+    padding: 0;
+  }
+
+  .column {
+    flex-direction: column;
+    text-align: center;
+    align-items: start;
+    justify-content: center;
+  }
+
+  .row {
+    flex-direction: row;
+    align-items: center;
+  }
+  .priceGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 32px;
+  }
+
+  .blackRow {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    color: rgba(23, 23, 23, 1);
+  }
+
+  .purpleRow {
+    color: rgba(67, 56, 202, 1);
+  }
+  .price {
+    font-family: Noto Sans;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: 0%;
+  }
+
+  .per {
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+  }
+
+  .billing {
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: rgba(82, 82, 82, 1);
+  }
+
+  .include {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 32px;
+
+    height: 18.75rem;
+  }
+
+  .includeItem {
+    font-family: Noto Sans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: rgba(82, 82, 82, 1);
+    display: flex;
+    gap: 12px;
+  }
+}
+.mostPopular {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(238, 242, 255, 1);
+  color: rgba(67, 56, 202, 1);
+  font-family: Noto Sans;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  width: 100%;
+  height: 60px;
+}

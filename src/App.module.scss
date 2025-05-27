@@ -1,0 +1,18 @@
+.body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  overflow-x: hidden; //
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1440px;
+  max-width: 1440px;
+  min-height: calc(100vh - 120px);
+  flex: 1;
+  box-shadow: -10px 0px 15px rgba(0, 0, 0, 0.3),
+    10px 0px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
