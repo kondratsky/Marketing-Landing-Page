@@ -6,13 +6,30 @@ import Input from "../Input/Input";
 import { useState } from "react";
 
 function Subscribe() {
-  const [state, setState] = useState("");
+  const [inputValue, setInputValue] = useState('');
+  const [error, setError] = useState('');
+
+  const validate = (value) => {
+    if (value.trim() === '') {
+      return 'Це поле не може бути порожнім';
+    }
+    if (value.length < 3) {
+      return 'Мінімум 3 символи';
+    }
+    return '';
+  };
+
+  const handleChange = (value) => {
+    setInputValue(value);
+    setError(validate(value));
+  };
 
   const arr = [
     "Exclusive access to new abstract images and collections",
     "Unlock special promotions only for subscribers",
     "Regular doses of artistic inspiration",
   ];
+
   return (
     <div className={s.subscribe}>
       <div className={s.container}>
@@ -31,24 +48,23 @@ function Subscribe() {
           <div className={s.footer}>
             <div className={s.register}>
               <Input
-                label="Ім'я користувача"
-                name="username"
-                placeholder="Введи ім'я"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
-                fullWidth={true}
+              type="email" 
+                value={inputValue}
+                onChange={handleChange}
+                placeholder="Enter your email"
+                error={error}
               />
-
               <Button size="small" label="Subscribe" />
             </div>
-            <p>We only send you the best! No spam. </p>
+            <p>We only send you the best! No spam.</p>
           </div>
         </div>
         <div className={s.rightPanel}>
-          <img src="public/Subscribe.svg" alt="Subscribe" />
+          <img src="public/Subscribe.svg" alt="Subscribe" className={s.subscribeImg} />
         </div>
       </div>
     </div>
   );
 }
+
 export default Subscribe;

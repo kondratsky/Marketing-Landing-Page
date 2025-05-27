@@ -1,9 +1,13 @@
 .subscribe {
-  border: 1px solid black;
+
+  
 
   .container {
     display: flex;
     gap: 32px;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
 
     .leftPanel {
       display: flex;
@@ -12,7 +16,7 @@
       padding: 74px 32px;
 
       .descriptionAndInclude {
-        border: 1px solid black;
+        
         display: flex;
         flex-direction: column;
         gap: 64px;
@@ -38,14 +42,26 @@
         }
       }
       .footer {
-        // border: 1px solid black;
+        
 
         .register {
           display: flex;
           flex-direction: row;
           gap: 16px;
-          //   border: 1px solid black;
-          min-height: 40px;
+          @media (max-width:370px) {
+            flex-direction: column;
+          }
+           Input{
+            @media (max-width:370px) {
+              width:100%
+            }
+           }
+           Button{
+            @media (max-width:370px) {
+              width:100%
+            }
+           }
+          
         }
 
         p {
@@ -61,5 +77,22 @@
   }
   .rightPanel {
     height: 100%;
+      flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 12px;
+
+    .subscribeImg {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 4 / 3;
+    }
   }
 }

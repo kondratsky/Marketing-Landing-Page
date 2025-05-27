@@ -10,6 +10,8 @@ import Convenience from "./Components/Convenience/Convenience";
 import Price from "./Components/Price/Price";
 import Question from "./Components/Question/Question";
 import Subscribe from "./Components/Subscribe/Subscribe";
+import Feedback from "./Components/Feedback/Feedback"
+import Footer from "./Components/Footer/Footer"
 
 function App() {
   return (
@@ -28,7 +30,9 @@ function App() {
           <Price />
           <Question />
           <Subscribe />
+          <Feedback/>
         </Container>
+        <Footer/>
       </div>
     </div>
   );

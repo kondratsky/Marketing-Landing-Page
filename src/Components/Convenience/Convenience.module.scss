@@ -1,6 +1,6 @@
 .convenience {
   margin: 96px 0px;
-  border: 1px solid black;
+ 
 
   .leftPanel {
     display: flex;
@@ -43,8 +43,7 @@
   }
 
   .rightPanel {
-    width: 630px;
-    height: 460px;
+   
     flex-shrink: 0;
     overflow: hidden;
     border-radius: 12px;
